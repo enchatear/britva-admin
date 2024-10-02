@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blocks_services",
+  "info": {
+    "displayName": "Services"
+  },
+  "options": {},
+  "attributes": {
+    "service": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.service-row"
+    },
+    "backgroundImg": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

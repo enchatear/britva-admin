@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_salons",
+  "info": {
+    "displayName": "Salons"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "backgroundImg": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

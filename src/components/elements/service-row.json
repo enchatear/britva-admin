@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_elements_service_rows",
+  "info": {
+    "displayName": "ServiceRow",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "juniorPrice": {
+      "type": "string"
+    },
+    "middlePrice": {
+      "type": "string"
+    },
+    "seniorPrice": {
+      "type": "string"
+    }
+  }
+}

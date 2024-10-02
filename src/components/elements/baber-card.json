@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_elements_baber_cards",
+  "info": {
+    "displayName": "BaberCard",
+    "icon": "user",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "junior",
+        "middle",
+        "senior"
+      ]
+    }
+  }
+}

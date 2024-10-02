@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_blocks_franchises",
+  "info": {
+    "displayName": "Franchise"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "button": {
+      "displayName": "Button",
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.button"
+    },
+    "backgroundImg": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_barbers",
+  "info": {
+    "displayName": "Barbers",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.baber-card"
+    }
+  }
+}
