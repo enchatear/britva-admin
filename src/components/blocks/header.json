@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_blocks_headers",
+  "info": {
+    "displayName": "header"
+  },
+  "options": {},
+  "attributes": {
+    "schedule": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "instagramLink": {
+      "type": "string"
+    },
+    "navLink": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.menu-button"
+    }
+  }
+}

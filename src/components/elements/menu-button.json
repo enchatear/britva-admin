@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_elements_menu_buttons",
+  "info": {
+    "displayName": "MenuButton"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "section": {
+      "type": "string"
+    }
+  }
+}
