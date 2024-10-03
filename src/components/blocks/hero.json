@@ -1,7 +1,8 @@
 {
   "collectionName": "components_blocks_heroes",
   "info": {
-    "displayName": "Hero"
+    "displayName": "Hero",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -14,12 +15,13 @@
     "location": {
       "type": "string"
     },
-    "background": {
+    "backgroundImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

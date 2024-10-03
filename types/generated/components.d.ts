@@ -99,12 +99,13 @@ export interface BlocksHero extends Struct.ComponentSchema {
   collectionName: 'components_blocks_heroes';
   info: {
     displayName: 'Hero';
+    description: '';
   };
   attributes: {
     title: Schema.Attribute.String;
     subtitle: Schema.Attribute.String;
     location: Schema.Attribute.String;
-    background: Schema.Attribute.Media<'images'>;
+    backgroundImg: Schema.Attribute.Media<'images'>;
   };
 }
 
