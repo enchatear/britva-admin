@@ -8,7 +8,14 @@ const populate = {
       content: {
         on: {
           'blocks.header': {
-            populate: '*'
+            populate: {
+              logo: {
+                fields: ['id', 'name', 'alternativeText', 'url']
+              },
+              navLink: {
+                populate: '*',
+              }
+            }
           },
           'blocks.hero': {
             populate: {
@@ -19,7 +26,7 @@ const populate = {
           },
           'blocks.barbers': {
             populate: {
-              Card: {
+              barbers: {
                 populate: {
                   image: {
                     fields: ['id', 'name', 'alternativeText', 'url']
@@ -36,6 +43,9 @@ const populate = {
                     fields: ['id', 'name', 'alternativeText', 'url']
                   }
                 }
+              },
+              backgroundImg: {
+                fields: ['id', 'name', 'alternativeText', 'url']
               }
             }
           },

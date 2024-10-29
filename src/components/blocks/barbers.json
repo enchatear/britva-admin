@@ -6,7 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "Card": {
+    "barbers": {
       "type": "component",
       "repeatable": true,
       "component": "elements.baber-card"

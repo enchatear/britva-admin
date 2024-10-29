@@ -113,12 +113,14 @@ export interface BlocksHeader extends Struct.ComponentSchema {
   collectionName: 'components_blocks_headers';
   info: {
     displayName: 'header';
+    description: '';
   };
   attributes: {
     schedule: Schema.Attribute.String;
     phone: Schema.Attribute.String;
     instagramLink: Schema.Attribute.String;
     navLink: Schema.Attribute.Component<'elements.menu-button', true>;
+    logo: Schema.Attribute.Media<'images'>;
   };
 }
 
@@ -142,7 +144,7 @@ export interface BlocksBarbers extends Struct.ComponentSchema {
     description: '';
   };
   attributes: {
-    Card: Schema.Attribute.Component<'elements.baber-card', true>;
+    barbers: Schema.Attribute.Component<'elements.baber-card', true>;
   };
 }
 

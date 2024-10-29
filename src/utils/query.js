@@ -25,12 +25,15 @@ const query = {
                 },
                 'blocks.services': {
                     populate: {
-                        service: {
-                            populate: {
-                                icon: {
-                                    fields: ['id', 'name', 'alternativeText', 'url']
-                                }
-                            }
+                        // service: {
+                        //     populate: {
+                        //         icon: {
+                        //             fields: ['id', 'name', 'alternativeText', 'url']
+                        //         }
+                        //     }
+                        // },
+                        backgroundImg: {
+                            fields: ['id', 'name', 'alternativeText', 'url']
                         }
                     }
                 },
