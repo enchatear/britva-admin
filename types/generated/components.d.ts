@@ -12,66 +12,6 @@ export interface SeoMetaData extends Struct.ComponentSchema {
   };
 }
 
-export interface ElementsServiceRow extends Struct.ComponentSchema {
-  collectionName: 'components_elements_service_rows';
-  info: {
-    displayName: 'ServiceRow';
-    description: '';
-  };
-  attributes: {
-    name: Schema.Attribute.String;
-    description: Schema.Attribute.Text;
-    icon: Schema.Attribute.Media<'images'>;
-    juniorPrice: Schema.Attribute.String;
-    middlePrice: Schema.Attribute.String;
-    seniorPrice: Schema.Attribute.String;
-  };
-}
-
-export interface ElementsServicePrice extends Struct.ComponentSchema {
-  collectionName: 'components_elements_service_prices';
-  info: {
-    displayName: 'ServicePrice';
-  };
-  attributes: {};
-}
-
-export interface ElementsMenuButton extends Struct.ComponentSchema {
-  collectionName: 'components_elements_menu_buttons';
-  info: {
-    displayName: 'MenuButton';
-  };
-  attributes: {
-    title: Schema.Attribute.String;
-    section: Schema.Attribute.String;
-  };
-}
-
-export interface ElementsButton extends Struct.ComponentSchema {
-  collectionName: 'components_elements_buttons';
-  info: {
-    displayName: 'Button';
-  };
-  attributes: {
-    title: Schema.Attribute.String;
-    url: Schema.Attribute.String;
-  };
-}
-
-export interface ElementsBaberCard extends Struct.ComponentSchema {
-  collectionName: 'components_elements_baber_cards';
-  info: {
-    displayName: 'BaberCard';
-    icon: 'user';
-    description: '';
-  };
-  attributes: {
-    name: Schema.Attribute.String;
-    image: Schema.Attribute.Media<'images'>;
-    position: Schema.Attribute.Enumeration<['junior', 'middle', 'senior']>;
-  };
-}
-
 export interface BlocksServices extends Struct.ComponentSchema {
   collectionName: 'components_blocks_services';
   info: {
@@ -148,21 +88,81 @@ export interface BlocksBarbers extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementsServiceRow extends Struct.ComponentSchema {
+  collectionName: 'components_elements_service_rows';
+  info: {
+    displayName: 'ServiceRow';
+    description: '';
+  };
+  attributes: {
+    name: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    icon: Schema.Attribute.Media<'images'>;
+    juniorPrice: Schema.Attribute.String;
+    middlePrice: Schema.Attribute.String;
+    seniorPrice: Schema.Attribute.String;
+  };
+}
+
+export interface ElementsServicePrice extends Struct.ComponentSchema {
+  collectionName: 'components_elements_service_prices';
+  info: {
+    displayName: 'ServicePrice';
+  };
+  attributes: {};
+}
+
+export interface ElementsMenuButton extends Struct.ComponentSchema {
+  collectionName: 'components_elements_menu_buttons';
+  info: {
+    displayName: 'MenuButton';
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    section: Schema.Attribute.String;
+  };
+}
+
+export interface ElementsButton extends Struct.ComponentSchema {
+  collectionName: 'components_elements_buttons';
+  info: {
+    displayName: 'Button';
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    url: Schema.Attribute.String;
+  };
+}
+
+export interface ElementsBaberCard extends Struct.ComponentSchema {
+  collectionName: 'components_elements_baber_cards';
+  info: {
+    displayName: 'BaberCard';
+    icon: 'user';
+    description: '';
+  };
+  attributes: {
+    name: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    position: Schema.Attribute.Enumeration<['junior', 'middle', 'senior']>;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'seo.meta-data': SeoMetaData;
-      'elements.service-row': ElementsServiceRow;
-      'elements.service-price': ElementsServicePrice;
-      'elements.menu-button': ElementsMenuButton;
-      'elements.button': ElementsButton;
-      'elements.baber-card': ElementsBaberCard;
       'blocks.services': BlocksServices;
       'blocks.salons': BlocksSalons;
       'blocks.hero': BlocksHero;
       'blocks.header': BlocksHeader;
       'blocks.franchise': BlocksFranchise;
       'blocks.barbers': BlocksBarbers;
+      'elements.service-row': ElementsServiceRow;
+      'elements.service-price': ElementsServicePrice;
+      'elements.menu-button': ElementsMenuButton;
+      'elements.button': ElementsButton;
+      'elements.baber-card': ElementsBaberCard;
     }
   }
 }
